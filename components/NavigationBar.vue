@@ -2,15 +2,15 @@
     <nav class="navbar">
         <div class="">
             <!-- Add your logo or site title here -->
-            <h1 class="text-2xl font-bold text-blue-500">Blog</h1>
+            <h1 class="text-2xl font-bold text-blue-500">Segni Blogs</h1>
         </div>
         <div class="flex justify-end items-center gap-5">
-            <div class="">
+            <!-- <div class="">
                 <nuxt-link to="/">Home</nuxt-link>
             </div>
             <div class="">
                 <nuxt-link to="/blog">Blog</nuxt-link>
-            </div>
+            </div> -->
             <!-- Theme toggle button -->
             <label class="swap swap-rotate">
                 <input type="checkbox" @change="toggleTheme" class="" />
@@ -57,7 +57,7 @@ const toggleTheme = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
 }
@@ -66,7 +66,7 @@ body {
     @apply min-h-screen bg-white dark:bg-gray-800 dark:text-gray-200;
 }
 
-* {
+div, p, nav, main {
     @apply bg-white dark:bg-gray-800 dark:text-gray-200;
 }
 </style>
