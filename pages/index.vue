@@ -1,4 +1,5 @@
 <template>
+  <NavigationBar />
   <div class="grid h-screen place-content-center gap-3">
     <h1 class="text-5xl text-blue-500">Welcome to Nuxt Content</h1>
     <p class="text-xl text-red-600">
