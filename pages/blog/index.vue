@@ -46,4 +46,5 @@ const qc = await queryContent("blog")
       </div>
     </div>
   </main>
+  <Background />
 </template>

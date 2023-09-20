@@ -2,7 +2,7 @@
     <nav class="navbar">
         <div class="">
             <!-- Add your logo or site title here -->
-            <h1 class="text-2xl font-bold text-blue-500">Segni Blogs</h1>
+            <nuxt-link class="text-2xl font-bold text-blue-500" to="/">Segni Blogs</nuxt-link>
         </div>
         <div class="flex justify-end items-center gap-5">
             <!-- <div class="">
@@ -57,9 +57,10 @@ const toggleTheme = () => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
     left: 0px;
+    z-index: 10;
 }
 
 body {
