@@ -12,7 +12,7 @@
       </div>
 
       <div>
-        <img class="w-64 h-64" src="images/cat.png">
+        <img class="w-64 h-64 hidden md:block" src="images/cat.png">
       </div>
     </div>
   </div>

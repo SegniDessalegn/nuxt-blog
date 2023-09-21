@@ -18,7 +18,7 @@ const qc = await queryContent("blog")
         <div
           class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"
         >
-          Recent Posts
+          All Posts
         </div>
       </div>
       <div class="mt-12 grid gap-16 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">

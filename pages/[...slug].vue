@@ -1,9 +1,9 @@
 <script setup>
 import { convertDate } from '../utils'
+const { toc } = useContent()
 </script>
 
 <template>
-  <NavigationBar />
   <div class="flex justify-center gap-5">
     <main
     class="relative mx-auto max-w-3xl overflow-hidden bg-white py-16 px-2 sm:px-4 lg:px-6"
@@ -40,11 +40,22 @@ import { convertDate } from '../utils'
       </div>
     </ContentDoc>
   </main>
-    <div class="min-h-screen w-80 border-l-2 border-gray-300 relative">
-
-        <div class="sticky top-10 mt-20 p-5 mx-auto w-fit">
+    <div class="min-h-screen w-80 border-l-2 border-gray-100 relative">
+        <div class="w-full sticky top-2 pr-5 flex justify-end">
+          <ThemeSwitcher />
+        </div>
+        <div class="sticky top-10 mt-20 p-5 mx-auto">
           <div class="flex flex-col">
-            <div class="font-bold">Contents</div>
+            <div class="font-bold self-center">Contents</div>
+            <div>
+              <ul v-if="toc && toc.links">
+                <li v-for="link in toc.links" :key="link.text" class="my-2 text-blue-500 hover:underline">
+                  <a :href="`#${link.id}`">
+                    {{ link.text }}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
       </div>
     </div>
